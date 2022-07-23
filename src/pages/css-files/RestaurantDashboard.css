@@ -1,0 +1,91 @@
+.dashboard-layout{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.food-card-grid{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.75rem; /* 12px */
+}
+
+.drag-drop-button{
+    background-color: gray;
+    color: white;
+    text-align: center;
+    border-radius: .75rem;
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+.sign-out-button{
+    background: #F49464;
+    border: none;
+    color: white;
+    padding: .5rem;
+    border-radius: .5rem;
+    width: 50%;
+    margin-top: .5rem;
+    margin-bottom: 2rem;
+}
+
+.restaurant-info-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 35%
+}
+
+.food-card-grid-container{
+    text-align:left;
+  }
+
+@media screen and (max-width: 1341px) {
+    
+    .dashboard-layout{
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+    }
+    .food-card-grid{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        justify-items: center;
+        gap: 0.75rem; /* 12px */
+    }
+    .food-card-grid-container{
+        text-align:center;
+      }
+      .restaurant-info-box{
+        width: 70%;
+    }
+  }
+
+  @media screen and (max-width: 630px) {
+    
+    .dashboard-layout{
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .food-card-grid{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .restaurant-info-box{
+        width: 80%;
+    }
+    .food-card-grid-container{
+        text-align:center;
+      }
+  }
